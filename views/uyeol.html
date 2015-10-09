@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Mobil Uygulamam</title><br/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="//getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="javascripts/jquery.js"></script>
+</head>
+<body></body>
+<div id="baslik" style="text-align:center;" class="container">
+    <h1>Uye Ol</h1><br/>
+</div>
+<div id="form" style="text-align:center;" class="container" >
+    <form name="form" action="" method="post" onsubmit="return false;" id="formad">
+        <input type="text" name="uye_kadi" placeholder="Username" required="required" class="form-control"/><br/>
+        <input type="text" name="uye_sadi" placeholder="Surname" required="required" class="form-control"/><br/>
+        <input type="text" name="uye_sifre" placeholder="Password" required="required" class="form-control"/><br/>
+        <input type="text" name="uye_eposta" placeholder="E-posta" required="required" class="form-control"/><br/>
+        <button onclick="$.kayitol()" ng-disabled="form.$invalid" style="margin-right:10px" class="btn btn-info">Uye Ol</button>
+        <button onclick="$.Back()" ng-disabled="form.$invalid" class="btn btn-info">Geri Don</button><br/><br/><br/>
+        <div id="sonuc" style="text-align:center;" class="container"></div>
+        <p class="text-success"></p>
+    </form>
+</div>
+</html>

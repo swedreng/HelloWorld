@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#divUyeMesajlari{
+  margin-top :15px;
+}
+
+#divUyeMesajlari tr td,th{
+  padding :5px;
+
+}
+
+#msjSil{
+  text-aling:center;
+
+}

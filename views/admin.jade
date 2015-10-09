@@ -1,0 +1,75 @@
+html
+    head
+        title Mobil Uygulamam
+
+        link(href="//getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet")
+        link(href="/stylesheets/style.css" rel="stylesheet")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+        script(src="javascripts/jquery.js")
+        script(src="javascripts/jquery2.js")
+        script(src="javascripts/js.cookie-2.0.3.min.js")
+        script(src="http://momentjs.com/downloads/moment-with-locales.min.js")
+        meta(HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT")
+        meta(HTTP-EQUIV="Pragma" CONTENT="no-cache")
+
+    body
+        #div1(class="jumbotron" style="text-align:center;   width:600px; height: 200px;padding: 20px;background-color: white;position: relative;margin: auto;  ")
+            h1 Admin Paneline hosgeldiniz
+        br
+        #button(class="jumbotron" style="background-color: #ddd;  width:700px; padding: 20px; background-color: white;position: relative;margin: auto;  ")
+            | Uye Sec&nbsp&nbsp&nbsp&nbsp
+
+            select(id="deneme" style="padding:5px; width:200px")
+                option(value="0") Seciniz
+
+            button(class="btn btn-danger" style="float:right;" onclick="$.CikisYap()") Cikis Yap
+
+
+
+
+        #userpanel(class="jumbotron" style=" display:none; #ddd;text-align:center;  width:600px; height: 80px;padding: 20px; background-color: white;position: relative;margin: auto;  text-align:center")
+
+            ul(class="nav nav-tabs" role="tablist" id="tabUser")
+                li(id="tabUyeBilgisi" class="active")
+                    a(href="#ic1" aria-controls="ic1" role="tab" data-toggle="tab") Uye Bilgileri
+                li(id="tabUyeMesajlari")
+                    a(href="#ic2" id="btnUyeMesajlari" aria-controls="ic2" role="tab" data-toggle="tab") Uye Mesajlari
+            #ana(class="tab-content")
+                #ic1(role="tabpanel" class="tab-pane active")
+                    form(name="formed1" action="" method="post" onsubmit="return false;"  id="formed1")
+                        br
+                        input(id="boy" type="text" class="form-control" name="boy" placeholder="Boy")
+                        br
+                        input(id="yas" type="text" class="form-control" name="yas" placeholder="Yas")
+                        br
+                        input(id="kilo" type="text" class="form-control" name="kilo" placeholder="Kilo")
+                        br
+                        input(id="belcevresi" type="text" class="form-control" name="belcevresi" placeholder="Bel Cevresi")
+                        br
+                        input(id="kolcevresi" type="text" class="form-control" name="kolcevresi" placeholder="Kol Cevresi")
+                        br
+                        input(id="goguscevresi" type="text" class="form-control" name="goguscevresi" placeholder="Gogus Cevresi")
+                        br
+                        input(id="omuzgenisligi" type="text" class="form-control" name="omuzgenisligi" placeholder="Omuz Genisligi")
+                        br
+                        textarea(id="not" type="text" class="form-control" style="margin: 0px; width: 560px; height: 100px" rows="0" cols="0" name="not" placeholder="Ogrenciye not..")
+                        br
+                    #div2(style="text-align:center; ")
+                        button(id="Guncelle" onclick="$.Guncelle()" style ="width:75px;  margin:2px"  class="btn btn-info" ) Guncelle
+                        button(id="kaydet" onclick="$.KayitOl()" style ="width:75px;  margin:2px" class="btn btn-info") Kaydet
+                        button(id="sil" onclick="$.Sil()" style ="width:75px; ; margin:2px" class="btn btn-info") Sil
+                        br
+                        br
+                        br
+                    #sonuc(style="text-align:center;")
+                        p(class="text-success")
+
+                #ic2(role="tabpanel" class="tab-pane" style="text-align:left")
+                    table(id="divUyeMesajlari" class="table" style="width:100%")
+
+
+                    button(id="msjSil" onclick="$.msjSil()" style="" class="btn btn-info") Mesaji Sil
+
+
+

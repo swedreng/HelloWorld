@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Mobil Uygulamam</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="//getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/stylesheets/style.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/jquery2.js"></script>
+    <script src="javascripts/js.cookie-2.0.3.min.js"></script>
+    <script src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <meta HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache"/>
+</head>
+<body>
+<div id="div1" style="text-align:center; " class="container">
+    <h1>Admin Paneline hosgeldiniz</h1>
+</div><br/>
+<div id="button" style=""  class="container">Uye Sec&nbsp&nbsp&nbsp&nbsp
+    <select id="deneme" style="padding:5px; width:200px">
+        <option value="0">Seciniz</option>
+    </select>
+    <br/>
+    <br/>
+    <button style="float:right;" onclick="$.CikisYap()" class="btn btn-danger">Cikis Yap</button>
+</div>
+<div id="userpanel" style="display:none;  text-align:center;"  class="container">
+    <ul role="tablist" id="tabUser" class="nav nav-tabs">
+        <li id="tabUyeBilgisi" class="active"><a href="#ic1" aria-controls="ic1" role="tab" data-toggle="tab">Uye Bilgileri</a></li>
+        <li id="tabUyeMesajlari"><a href="#ic2" id="btnUyeMesajlari" aria-controls="ic2" role="tab" data-toggle="tab">Uye Mesajlari</a></li>
+    </ul>
+    <div id="ana" class="tab-content">
+        <div id="ic1" role="tabpanel" class="tab-pane active">
+            <form name="formed1" action="" method="post" onsubmit="return true;" id="formed1"><br/>
+                <input id="boy" type="text" name="boy" placeholder="Boy" class="form-control"/><br/>
+                <input id="yas" type="text" name="yas" placeholder="Yas" class="form-control"/><br/>
+                <input id="kilo" type="text" name="kilo" placeholder="Kilo" class="form-control"/><br/>
+                <input id="belcevresi" type="text" name="belcevresi" placeholder="Bel Cevresi" class="form-control"/><br/>
+                <input id="kolcevresi" type="text" name="kolcevresi" placeholder="Kol Cevresi" class="form-control"/><br/>
+                <input id="goguscevresi" type="text" name="goguscevresi" placeholder="Gogus Cevresi" class="form-control"/><br/>
+                <input id="omuzgenisligi" type="text" name="omuzgenisligi" placeholder="Omuz Genisligi" class="form-control"/><br/>
+                <textarea id="not" type="text" style="" placeholder="Ogrenciye not.." class="form-control"></textarea><br/>
+            </form>
+            <div id="div2" style="text-align:center; ">
+                <button id="Guncelle" onclick="$.Guncelle()" style="width:75px;  margin:2px" class="btn btn-info">Guncelle</button>
+                <button id="kaydet" onclick="$.KayitOl()" style="width:75px;  margin:2px" class="btn btn-info">Kaydet</button>
+                <button id="sil" onclick="$.Sil()" style="width:75px; ; margin:2px" class="btn btn-info">Sil</button><br/><br/><br/>
+            </div>
+            <div id="sonuc" class="container" style="text-align:center;">
+                <p class="text-success"></p>
+            </div>
+        </div>
+        <div id="ic2" role="tabpanel" style="text-align:left" class="tab-pane">
+            <table id="divUyeMesajlari" style="width:100%" class="table"></table>
+            <button id="msjSil" onclick="$.msjSil()" style="" class="btn btn-info">Mesaji Sil</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

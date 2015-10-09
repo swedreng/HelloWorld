@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Mobil Uygulamam</title><br/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="//getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/stylesheets/style.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/jquery2.js"></script>
+    <script src="/javascripts/js.cookie-2.0.3.min.js"></script>
+    <script src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <meta HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache"/>
+    <script src="/javascripts/jquery3.js"></script>
+</head>
+<body>
+<div id="baslik" style="text-align:center;" class="container">
+    <h1></h1>
+</div>
+<div id="sonuc" style="text-align:center;" class="container">
+    <h4></h4><br/>
+</div>
+<div id="bilgiler" style="text-align:center;"  class="container">
+    <ul style="list-style-type:none;" class="list-group">
+        <li id="1" class="list-group-item"></li><br/>
+        <li id="2" class="list-group-item"></li><br/>
+        <li id="3" class="list-group-item"></li><br/>
+        <li id="4" class="list-group-item"></li><br/>
+        <li id="5" class="list-group-item"></li><br/>
+        <li id="6" class="list-group-item"></li><br/>
+        <li id="7" class="list-group-item"></li><br/>
+        <li id="8" class="list-group-item"></li><br/>
+        <li id="9">
+            <input type="hidden" id="hdnAdmin_id"/>
+        </li><br/>
+    </ul>
+</div>
+<div id="cikisyap" style="text-align:center" class="container">
+    <button onclick="$.Back()" class="btn btn-danger">CikisYap</button>
+</div><br/>
+<div id="mesaj" style="text-align:center;" class="container">
+    <textarea id="not" type="text" style="text-align:center;" rows="0" cols="0" name="not" placeholder="Hocaniza not birakin.." class="form-control"></textarea><br/>
+    <button onclick="$.Ekle()" class="btn btn-success">Gonder</button>
+    <br/>
+    <br/>
+    <div id="sonuc" style="" class="container" >
+        <p class="text-success"></p>
+    </div>
+</div>
+</body>
+</html>
