@@ -4,4 +4,4 @@ Stajda Yaptığım Fitness hocaları ve öğrencileri arasında haberleşmeyi sa
 # Kullanılanlar
 Mysql Veritabanı /
 Jquery Frontend /
-Node ExpressJs Backend
+Node ExpressJs Backend / IDE Webstorm
