@@ -1,1 +1,7 @@
-# HelloWorld front-end Jquery / back-end Node ExpressJs ile stajda yaptığım basit çaplı bir fitness öğrenciler ve hocaları arasında kullanılması için yaptığım bir responsive web uygulaması
+# HelloWorld 
+# Fitness Web projesi
+Stajda Yaptığım Fitness hocaları ve öğrencileri arasında haberleşmeyi sağlayacak bir web uygulaması
+# Kullanılanlar
+Mysql Veritabanı
+Jquery Frontend
+Node ExpressJs Backend
